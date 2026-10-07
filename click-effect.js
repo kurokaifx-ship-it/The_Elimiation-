@@ -1,0 +1,1 @@
+document.addEventListener("pointerdown",e=>{if(e.pointerType==="mouse"&&e.button!==0)return;const r=document.createElement("span");r.className="click-ripple";r.style.left=e.clientX+"px";r.style.top=e.clientY+"px";const s=70+Math.random()*45;r.style.width=s+"px";r.style.height=s+"px";document.body.appendChild(r);r.addEventListener("animationend",()=>r.remove(),{once:true})});
